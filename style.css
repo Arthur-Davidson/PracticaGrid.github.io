@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    /* Colores solidos */
+    --blanco: #fff8f8;
+    --color1: #ff4545;
+    --color2: #f5e690;
+    --color3: #faa0a0;
+    --color4: #ffe030;
+    --color5: #800404;
+    --color6: #805504;
+    --negro: #000000;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body{
+    width: 100%;
+    height: 1000px;
+    background-color: var(--blanco);
+    display: grid;
+    grid-template-rows: 1fr .5fr 4fr 1fr;
+    gap: 10px;
+    padding: 5px;
+}
+header{
+    background-color: var(--color5);
+    color: var(--color2);
+    padding: 10px;
+}
+nav{
+    background-color:var(--color4);
+    padding: 10px;
+}
+main{
+    background-color:var(--color3);
+    padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "banner banner banner aside"
+    "banner banner banner aside"
+    "card1 card2 card3 aside"
+    "card1 card2 card3 aside"
+    ;
+    gap: 10px;
+    
+}
+.banner{
+    background-color:var(--color1);
+    grid-area: banner;
+    padding: 10px;
+}
+.card{
+    background-color: var(--color1);
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.item{
+    background-color:var(--color2);
+    padding: 10px;
+}
+.aside{
+    background-color:var(--color6);
+    grid-area: aside;
+    padding: 10px;
+}
+footer{
+    background-color: var(--color5);
+    color: var(--color2);
+    padding: 10px;
+}
